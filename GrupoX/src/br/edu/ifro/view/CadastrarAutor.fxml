@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="161.0" prefWidth="221.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.CadastrarAutorController">
+   <children>
+      <Label layoutX="14.0" layoutY="39.0" text="Nome" />
+      <TextField fx:id="txtNome" layoutX="54.0" layoutY="35.0" prefHeight="25.0" prefWidth="154.0" />
+      <Button layoutX="28.0" layoutY="97.0" mnemonicParsing="false" onAction="#salvar" prefHeight="41.0" prefWidth="63.0" text="Salvar" />
+      <Button fx:id="btnCancelar" layoutX="131.0" layoutY="98.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="41.0" prefWidth="63.0" text="Cancelar" />
+   </children>
+</AnchorPane>

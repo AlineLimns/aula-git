@@ -14,6 +14,11 @@ public class Funcionario {
     private String usuario;
     private String senha;
 
+    @Override
+    public String toString() {
+        return nome; //To change body of generated methods, choose Tools | Templates.
+    }
+
     public Integer getId() {
         return id;
     }

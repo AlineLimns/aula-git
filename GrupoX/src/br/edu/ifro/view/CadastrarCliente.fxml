@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.CadastrarClienteController">
+   <children>
+      <Label layoutX="57.0" layoutY="51.0" text="Nome" />
+      <TextField fx:id="txtNome" layoutX="110.0" layoutY="47.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="57.0" layoutY="116.0" text="CPF" />
+      <TextField fx:id="txtCpf" layoutX="110.0" layoutY="112.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="55.0" layoutY="181.0" text="Telefone" />
+      <TextField fx:id="txtTelefone" layoutX="110.0" layoutY="177.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="55.0" layoutY="242.0" text="Sexo" />
+      <RadioButton fx:id="rbMasculino" layoutX="110.0" layoutY="242.0" mnemonicParsing="false" text="Masculino" />
+      <RadioButton fx:id="rbFeminino" layoutX="211.0" layoutY="242.0" mnemonicParsing="false" text="Feminino" />
+      <Button layoutX="55.0" layoutY="306.0" mnemonicParsing="false" onAction="#salvar" prefHeight="40.0" prefWidth="64.0" text="Salvar" />
+      <Button layoutX="152.0" layoutY="307.0" mnemonicParsing="false" onAction="#limpar" prefHeight="40.0" prefWidth="64.0" text="Limpar" />
+      <Button fx:id="btnCancelar" layoutX="246.0" layoutY="307.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="40.0" prefWidth="64.0" text="Cancelar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.EmprestimoController">
+   <children>
+      <ComboBox fx:id="cbCliente" layoutX="163.0" layoutY="14.0" prefWidth="150.0" />
+      <ComboBox fx:id="cbFuncionario" layoutX="426.0" layoutY="18.0" prefWidth="150.0" />
+      <Label layoutX="67.0" layoutY="18.0" text="Cliente" />
+      <Label layoutX="330.0" layoutY="22.0" text="Funcionário" />
+      <ComboBox fx:id="cbObras" layoutX="163.0" layoutY="61.0" prefWidth="150.0" />
+      <Label layoutX="67.0" layoutY="65.0" text="Livro" />
+      <TableView fx:id="tbObras" layoutX="70.0" layoutY="105.0" prefHeight="238.0" prefWidth="439.0">
+        <columns>
+          <TableColumn prefWidth="203.0" text="Livro">
+              <cellValueFactory>
+                <PropertyValueFactory property="nome" />
+            </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="235.0" text="Autor">
+              <cellValueFactory>
+                <PropertyValueFactory property="autor" />
+            </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="335.0" layoutY="61.0" mnemonicParsing="false" onAction="#adicionar" text="Adicionar" />
+      <Button layoutX="519.0" layoutY="133.0" mnemonicParsing="false" onAction="#remover" text="Remover" />
+      <Button layoutX="118.0" layoutY="352.0" mnemonicParsing="false" onAction="#salvar" prefHeight="38.0" prefWidth="64.0" text="Salvar" />
+      <Button layoutX="258.0" layoutY="352.0" mnemonicParsing="false" onAction="#salvar" prefHeight="38.0" prefWidth="64.0" text="Limpar" />
+      <Button fx:id="btnCancelar" layoutX="394.0" layoutY="352.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="38.0" prefWidth="64.0" text="Cancelar" />
+   </children>
+</AnchorPane>

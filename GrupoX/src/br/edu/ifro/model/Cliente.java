@@ -5,29 +5,26 @@
  */
 package br.edu.ifro.model;
 
-import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Entity
-public class Obra {
+public class Cliente {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
-    private Date data;
-    
-    @ManyToOne
-    private Autor autor;
+    private String cpf;
+    private String telefone;
+    private String sexo;
 
     @Override
     public String toString() {
         return nome; //To change body of generated methods, choose Tools | Templates.
     }
-
+    
     public Integer getId() {
         return id;
     }
@@ -44,20 +41,28 @@ public class Obra {
         this.nome = nome;
     }
 
-    public Date getData() {
-        return data;
+    public String getCpf() {
+        return cpf;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
-    public Autor getAutor() {
-        return autor;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setAutor(Autor autor) {
-        this.autor = autor;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
     
     

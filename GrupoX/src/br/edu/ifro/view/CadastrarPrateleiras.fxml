@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="277.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastrarPrateleiraController">
+   <children>
+      <Label layoutX="39.0" layoutY="19.0" text="Número" />
+      <Label layoutX="39.0" layoutY="79.0" text="Tipo" />
+      <TextField fx:id="txtNumero" layoutX="97.0" layoutY="15.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextArea fx:id="txtObservacoes" layoutX="41.0" layoutY="167.0" prefHeight="42.0" prefWidth="196.0" />
+      <Label layoutX="41.0" layoutY="138.0" text="Observações" />
+      <Button layoutX="12.0" layoutY="233.0" mnemonicParsing="false" onAction="#salvar" prefHeight="42.0" prefWidth="79.0" text="Salvar" />
+      <Button layoutX="100.0" layoutY="233.0" mnemonicParsing="false" onAction="#limpar" prefHeight="42.0" prefWidth="79.0" text="Limpar" />
+      <Button fx:id="btnCancelar" layoutX="189.0" layoutY="233.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="42.0" prefWidth="79.0" text="Cancelar" />
+      <RadioButton fx:id="rbLivro" layoutX="95.0" layoutY="79.0" mnemonicParsing="false" text="Livro">
+         <toggleGroup>
+            <ToggleGroup fx:id="rbTipo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbTese" layoutX="156.0" layoutY="79.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="47.0" text="Tese" toggleGroup="$rbTipo" />
+      <RadioButton fx:id="rbReferencia" layoutX="95.0" layoutY="109.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Referência" toggleGroup="$rbTipo" />
+      <RadioButton fx:id="rbPeriodico" layoutX="182.0" layoutY="109.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Periódico" toggleGroup="$rbTipo" />
+   </children>
+</AnchorPane>

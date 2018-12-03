@@ -10,10 +10,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.MenuPrincipalController">
     <children>
-      <MenuBar layoutX="3.0" layoutY="-2.0" prefHeight="32.0" prefWidth="769.0">
+      <MenuBar layoutX="3.0" layoutY="1.0" prefHeight="32.0" prefWidth="769.0">
         <menus>
           <Menu mnemonicParsing="false" text="Cadastros">
             <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirCadastroCliente" text="Clientes" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAutor" text="Autores" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroObra" text="Obras" />
                   <MenuItem mnemonicParsing="false" onAction="#abrirCadastroPrateleira" text="Prateleiras" />
@@ -24,7 +25,15 @@
                   <MenuItem mnemonicParsing="false" onAction="#criarEmprestimo" text="Empréstimo" />
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Listagem" />
+            <Menu mnemonicParsing="false" text="Listagem">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#listarClientes" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarAutores" text="Autores" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarObras" text="Obras" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarPrateleiras" text="Prateleiras" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarEmprestimos" text="Empréstimos" />
+                  <MenuItem mnemonicParsing="false" onAction="#listarFuncionarios" text="Funcionários" />
+               </items></Menu>
         </menus>
       </MenuBar>
     </children>

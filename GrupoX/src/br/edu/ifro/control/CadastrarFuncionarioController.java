@@ -16,11 +16,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- * FXML Controller class
- *
- * @author 3019657
- */
 public class CadastrarFuncionarioController implements Initializable {
 
     @FXML
@@ -30,6 +25,8 @@ public class CadastrarFuncionarioController implements Initializable {
     @FXML
     private TextField txtSenha;
 
+    private Funcionario funcionario;
+    
     /**
      * Initializes the controller class.
      */
@@ -38,18 +35,25 @@ public class CadastrarFuncionarioController implements Initializable {
         
     }
 
+    public void editarFuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
+        txtNome.setText(funcionario.getNome());
+        txtUsuario.setText(funcionario.getUsuario());
+        txtSenha.setText(funcionario.getSenha());
+    }
+    
     @FXML
     private void salvar(ActionEvent event) {
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome(txtNome.getText());
-        funcionario.setUsuario(txtUsuario.getText());
-        funcionario.setSenha(txtSenha.getText());
+        Funcionario funcionario1 = new Funcionario();
+        funcionario1.setNome(txtNome.getText());
+        funcionario1.setUsuario(txtUsuario.getText());
+        funcionario1.setSenha(txtSenha.getText());
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         em.getTransaction().begin();
-        em.persist(funcionario);
+        em.persist(funcionario1);
         em.getTransaction().commit();
     }
     
