@@ -63,13 +63,23 @@ public class LoginController implements Initializable {
                 alert.showAndWait();
             }
             else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Login");
+                alert.setHeaderText(null);
+                alert.setContentText("Login realizado com sucesso!");
+
+                alert.showAndWait();
+                
+                Stage stage = (Stage) txtUsuario.getScene().getWindow();
+                stage.close();
+
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
                 Scene scene = new Scene(fxmlLoader.load());
-                Stage stage = new Stage();
-                stage.setTitle("Menu Principal");
-                stage.setScene(scene);
-                stage.show();
+                Stage stage2 = new Stage();
+                stage2.setTitle("Menu Principal");
+                stage2.setScene(scene);
+                stage2.show();
             }
         }
     }
