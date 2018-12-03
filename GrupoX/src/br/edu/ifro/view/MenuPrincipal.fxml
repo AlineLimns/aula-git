@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -34,7 +35,17 @@
                   <MenuItem mnemonicParsing="false" onAction="#listarEmprestimos" text="Empréstimos" />
                   <MenuItem mnemonicParsing="false" onAction="#listarFuncionarios" text="Funcionários" />
                </items></Menu>
+            <Menu mnemonicParsing="false" text="Sair">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#sair" text="Clientes" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
+      <Label fx:id="lblBiblioteca" layoutX="225.0" layoutY="165.0" prefHeight="114.0" prefWidth="407.0" text="BIBLIOTECA">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

@@ -13,9 +13,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class MenuPrincipalController implements Initializable {
+
+    @FXML
+    private Label lblBiblioteca;
     
     
     @Override
@@ -144,4 +148,9 @@ public class MenuPrincipalController implements Initializable {
         stage.show();
     }
     
+    @FXML
+    public void sair(ActionEvent event) {
+        Stage stage = (Stage) lblBiblioteca.getScene().getWindow();
+        stage.close();
+    }
 }
