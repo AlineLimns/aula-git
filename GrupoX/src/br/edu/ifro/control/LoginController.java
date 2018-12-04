@@ -73,5 +73,16 @@ public class LoginController implements Initializable {
             }
         }
     }
+
+    @FXML
+    private void cadastrar(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarFuncionario.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Funcionario");
+        stage.setScene(scene);
+        stage.show();
+    }
     
 }

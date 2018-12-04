@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="204.0" prefWidth="421.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.CadastrarFuncionarioController">
+   <children>
+      <TextField fx:id="txtNome" layoutX="38.0" layoutY="47.0" prefHeight="25.0" prefWidth="314.0" />
+      <TextField fx:id="txtUsuario" layoutX="38.0" layoutY="108.0" />
+      <TextField fx:id="txtSenha" layoutX="201.0" layoutY="108.0" />
+      <Label layoutX="38.0" layoutY="30.0" text="Nome" />
+      <Label layoutX="38.0" layoutY="91.0" text="Usuário" />
+      <Label layoutX="201.0" layoutY="91.0" text="Senha" />
+      <Button layoutX="298.0" layoutY="164.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+   </children>
+</AnchorPane>
