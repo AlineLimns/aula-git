@@ -39,15 +39,36 @@ public class MenuPrincipalController implements Initializable {
     }
 
     @FXML
-    private void abrirCadastroObra(ActionEvent event) {
+    private void abrirCadastroObra(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarObra.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Obra");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    private void abrirCadastroPrateleira(ActionEvent event) {
+    private void abrirCadastroPrateleira(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarPrateleira.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Cadastrar Prateleira");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    private void criarEmprestimo(ActionEvent event) {
+    private void criarEmprestimo(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Emprestimo.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("Emprestimo");
+        stage.setScene(scene);
+        stage.show();
     }
     
 }
