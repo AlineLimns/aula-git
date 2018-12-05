@@ -28,41 +28,26 @@ public class MenuPrincipalController implements Initializable {
     }    
 
     @FXML
-    private void abrirCadastroAluno(ActionEvent event) throws IOException {
+    private void abrirCadastroAutor(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Aluno.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarAutor.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
-        stage.setTitle("Cadastrar aluno");
+        stage.setTitle("Cadastrar Autor");
         stage.setScene(scene);
         stage.show();
     }
 
     @FXML
-    private void fecharProjeto(ActionEvent event) {
-        
+    private void abrirCadastroObra(ActionEvent event) {
     }
 
     @FXML
-    private void abrirListagemAluno(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/ListagemAluno.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Cadastrar aluno");
-        stage.setScene(scene);
-        stage.show();
+    private void abrirCadastroPrateleira(ActionEvent event) {
     }
 
     @FXML
-    private void criarPedido(ActionEvent event)  throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/Pedido.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = new Stage();
-        stage.setTitle("Criar pedido");
-        stage.setScene(scene);
-        stage.show();
+    private void criarEmprestimo(ActionEvent event) {
     }
     
 }

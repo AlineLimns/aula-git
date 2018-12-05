@@ -54,7 +54,7 @@ public class AlunoController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         MaskFieldUtil.foneField(txtTelefone);    
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         Query query = em.createQuery("SELECT c FROM Cidade c ");
@@ -66,7 +66,7 @@ public class AlunoController implements Initializable {
 
     @FXML
     private void salvar(ActionEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         Aluno aluno1;

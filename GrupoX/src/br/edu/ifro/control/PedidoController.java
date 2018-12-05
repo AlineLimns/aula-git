@@ -38,7 +38,7 @@ public class PedidoController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         Query query = em.createQuery("SELECT p FROM Produto p ");
@@ -58,7 +58,7 @@ public class PedidoController implements Initializable {
 
     @FXML
     private void salvar(ActionEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         pedido.setNomeCliente(txtCliente.getText());

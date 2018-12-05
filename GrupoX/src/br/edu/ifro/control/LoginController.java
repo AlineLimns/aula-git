@@ -45,7 +45,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private void entrar(ActionEvent event) throws IOException {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         Query query = em.createQuery("SELECT f FROM Funcionario as f WHERE f.usuario = :user");

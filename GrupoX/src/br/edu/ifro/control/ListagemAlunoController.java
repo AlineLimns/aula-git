@@ -49,7 +49,7 @@ public class ListagemAlunoController implements Initializable {
 
     @FXML
     private void excluir(ActionEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         Aluno aluno = (Aluno) tbAlunos.getSelectionModel().getSelectedItem();
@@ -66,7 +66,7 @@ public class ListagemAlunoController implements Initializable {
     }
     
     private void listar() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
                 
         // import javax.persistence.Query;

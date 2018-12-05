@@ -45,7 +45,7 @@ public class CadastrarFuncionarioController implements Initializable {
         funcionario.setUsuario(txtUsuario.getText());
         funcionario.setSenha(txtSenha.getText());
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("aula");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
         EntityManager em = emf.createEntityManager();
         
         em.getTransaction().begin();

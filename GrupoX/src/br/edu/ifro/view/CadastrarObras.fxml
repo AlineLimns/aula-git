@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="261.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.control.CadastrarObrasController">
+   <children>
+      <Label layoutX="49.0" layoutY="149.0" text="Autor" />
+      <Label layoutX="49.0" layoutY="40.0" text="Nome" />
+      <Label layoutX="48.0" layoutY="93.0" text="Data" />
+      <ComboBox fx:id="cbAutor" layoutX="134.0" layoutY="145.0" prefWidth="150.0" />
+      <TextField fx:id="txtNome" layoutX="135.0" layoutY="36.0" />
+      <DatePicker layoutX="134.0" layoutY="89.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="46.0" layoutY="207.0" mnemonicParsing="false" onAction="#salvar" prefHeight="36.0" prefWidth="73.0" text="Salvar" />
+      <Button layoutX="148.0" layoutY="207.0" mnemonicParsing="false" onAction="#limpar" prefHeight="36.0" prefWidth="73.0" text="Limpar" />
+      <Button layoutX="248.0" layoutY="207.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="36.0" prefWidth="73.0" text="Cancelar" />
+   </children>
+</AnchorPane>
