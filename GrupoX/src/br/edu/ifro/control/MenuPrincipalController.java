@@ -52,7 +52,7 @@ public class MenuPrincipalController implements Initializable {
     @FXML
     private void abrirCadastroPrateleira(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarPrateleira.fxml"));
+        fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarPrateleiras.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = new Stage();
         stage.setTitle("Cadastrar Prateleira");

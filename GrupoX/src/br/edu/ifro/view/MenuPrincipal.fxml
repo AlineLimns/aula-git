@@ -35,11 +35,10 @@
                   <MenuItem mnemonicParsing="false" onAction="#listarEmprestimos" text="Empréstimos" />
                   <MenuItem mnemonicParsing="false" onAction="#listarFuncionarios" text="Funcionários" />
                </items></Menu>
-            <Menu mnemonicParsing="false" text="Sair">
+            <Menu mnemonicParsing="false" onAction="#sair" text="Sair">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#sair" text="Clientes" />
-               </items>
-            </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#sair" text="Sair" />
+               </items></Menu>
         </menus>
       </MenuBar>
       <Label fx:id="lblBiblioteca" layoutX="225.0" layoutY="165.0" prefHeight="114.0" prefWidth="407.0" text="BIBLIOTECA">
